@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  
+  android:fillViewport="true">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/btn_black"
+    android:orientation="vertical" >
+
+     <TextView
+        android:id="@+id/textVie1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="List of Experiments"
+        android:background="@drawable/btn_orange"
+        style="@style/BtnText"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SET II Experiments"
+        android:background="@drawable/btn_orange"
+        style="@style/BtnText"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/b6"
+        
+        android:layout_width="fill_parent"
+        style="@style/ButtonTexttitle"
+        android:background="@drawable/white"
+        android:layout_height="wrap_content"
+        android:text="6.Transistor characteristics." />
+
+
+    <Button
+        android:id="@+id/b7"
+        
+        android:layout_width="fill_parent"
+        style="@style/ButtonTexttitle"
+        android:background="@drawable/white"
+        android:layout_height="wrap_content"
+        android:text="7.Resonance frequency of LCR circuits." />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="fill_parent"
+        style="@style/ButtonTexttitle"
+        android:background="@drawable/white"
+               android:layout_height="wrap_content"
+        android:text="8.Stefan's Law verification" />
+
+    <Button
+        android:id="@+id/b9"
+        
+        android:layout_width="fill_parent"
+        style="@style/ButtonTexttitle"
+        android:background="@drawable/white"
+        android:layout_height="wrap_content"
+        android:text="9.Passive components." />
+
+    <Button
+        android:id="@+id/b10"
+        android:layout_width="fill_parent"
+        style="@style/ButtonTexttitle"
+        android:background="@drawable/white"
+        android:layout_height="wrap_content"
+        android:text="10.Hysteresis loss." />
+
+       <Button android:layout_height="wrap_content" android:text="Exit"  android:layout_width="fill_parent"
+        style="@style/ButtonTexttitle"
+        android:background="@drawable/white" android:id="@+id/e"></Button>
+   
+    <Button
+        android:id="@+id/b11"
+        android:layout_width="fill_parent"
+        style="@style/ButtonTexttitle"
+        android:background="@drawable/white"
+        android:layout_height="wrap_content"
+        android:text="Experiment 6 and 7 will be performed in one lab. " />
+</LinearLayout>
+</ScrollView>

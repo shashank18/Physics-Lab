@@ -1,0 +1,818 @@
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        
+        android:layout_height="fill_parent" >
+
+            <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+ 
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Obs. No.  "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="  Voltage (V)  "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Current (I) "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   R=V/I (ohms)  " 
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  P=V*I (watt)  "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="       Log R       "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     Log P       "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+            
+            
+            <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/vvvv"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"  
+                android:hint="error/least count"
+                android:gravity="center" >
+
+                
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/iiiii"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:hint="error/least count" android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/r1r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/p1p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLength="8"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lr1r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLength="8"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lp1r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+            
+            
+            
+            
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/volt1"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"  
+                android:text="1.6" android:gravity="center" >
+
+                <requestFocus />
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/current1"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:inputType="numberDecimal"  android:text="1.1" android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:gravity="center"
+                android:text="-----------"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLength="8"
+                android:text="-----------"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLength="8"
+                android:text="-----------"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:gravity="center"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+ <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                  android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/volt2"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+				android:inputType="numberDecimal"  android:text="2" android:gravity="center"              
+  				android:layout_height="wrap_content" >
+
+                <requestFocus />
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/current2"
+				android:inputType="numberDecimal"  android:text="1.14" android:gravity="center"         
+				android:singleLine="true"       
+			    android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLength="8"
+                android:text="-----------"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+				android:gravity="center"
+				android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lr2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLength="8"
+                android:text="-----------"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lp2"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+
+android:maxLength="8"                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow> <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                  android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/volt3"
+                 android:inputType="numberDecimal"  android:text="3" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                
+                android:layout_height="wrap_content" >
+
+                <requestFocus />
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/current3"
+                android:singleLine="true" 
+                android:inputType="numberDecimal"  android:text="1.33" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/r3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLength="8"
+                android:text="-----------"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:gravity="center"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lr3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:gravity="center"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:text="-----------"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow> <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                  android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/volt4"
+                android:inputType="numberDecimal"  android:text="4" android:gravity="center"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+              
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/current4" 
+                android:inputType="numberDecimal"  android:text="1.51" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/r4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:gravity="center"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLength="8"
+                android:text="-----------"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lr4"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:text="-----------"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lp4"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow> <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                  android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText 
+                android:id="@+id/volt5"
+                android:singleLine="true"
+                android:inputType="numberDecimal"  android:text="5" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <requestFocus />
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/current5"
+                android:singleLine="true" 
+                android:inputType="numberDecimal"  android:text="1.68" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/r5"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/p5"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lr5"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lp5"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow> <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                  android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/volt6" 
+                android:singleLine="true"
+                android:inputType="numberDecimal"  android:text="6" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <requestFocus />
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/current6" 
+                android:inputType="numberDecimal"  android:text="1.82" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/r6"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/p6"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lr6"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lp6"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow> <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                  android:gravity="center"
+                
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/volt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"  android:text="7" android:gravity="center"
+                android:singleLine="true" >
+
+                <requestFocus />
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/current7"
+                 android:inputType="numberDecimal"  android:text="1.98" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/r7"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/p7"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lr7"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/lp7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow> <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                  android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/volt8" 
+                android:inputType="numberDecimal"  android:text="8" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_height="wrap_content" >
+
+                <requestFocus />
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/current8" 
+                android:inputType="numberDecimal"  android:text="2.11" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/r8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/p8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/lr8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:text="-----------"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/lp8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:text="-----------"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow> <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                  android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/volt9"
+                 android:inputType="numberDecimal"  android:text="9" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_height="wrap_content" >
+
+                <requestFocus />
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/current9"
+                android:singleLine="true"
+                 android:inputType="numberDecimal"  android:text="2.24" android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/r9"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/p9"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lr9"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lp9"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:maxLength="8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+                            <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:text="           "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            </TableRow>
+            
+            <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+                 <Button
+                     android:id="@+id/button"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Calculate" />
+
+                 <Button
+                     android:id="@+id/graph"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="View Graph" />
+
+                 <Button
+                     android:id="@+id/submit"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Submit" />
+
+                 <Button
+                     android:id="@+id/clear"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Clear " />
+                 
+                  <Button
+                     android:id="@+id/con"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Conclusion" />
+                  <Button
+                     android:id="@+id/comm"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Comments" />
+                 <Button
+                     android:id="@+id/work"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Workspace" />
+            </TableRow>
+    </TableLayout>
+    </ScrollView>

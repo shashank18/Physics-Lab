@@ -1,0 +1,566 @@
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/scrollView1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+       <TableLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" >
+
+           <TableRow
+               android:id="@+id/tableRow1"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Record Of Observations"
+                   android:textAppearance="?android:attr/textAppearanceLarge" />
+               
+           </TableRow>
+           
+           
+           
+           <TableRow
+               android:id="@+id/tableRow1"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="      "
+                   android:textAppearance="?android:attr/textAppearanceLarge" />
+               
+           </TableRow>
+           
+
+           <TableRow
+               android:id="@+id/tableRow2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Serial Number"
+                   android:gravity="center_horizontal"
+                   android:textAppearance="?android:attr/textAppearanceMedium" />
+
+               
+                <TextView
+                   android:id="@+id/textView2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Voltage Vz in volts"
+                   android:gravity="center_horizontal"
+                   android:textAppearance="?android:attr/textAppearanceMedium" />
+               
+                
+                 <TextView
+                   android:id="@+id/textView2"
+                   android:layout_width="wrap_content"
+                   android:gravity="center_horizontal"
+                   android:layout_height="wrap_content"
+                   android:text="    Current Iz in mA"
+                   android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+           </TableRow>
+
+           <TableRow
+               android:id="@+id/tableRow3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:gravity="center"
+                   android:id="@+id/textView3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Error" />
+
+               <EditText
+                   android:id="@+id/ve1" android:singleLine="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="+/-"
+                   android:text="4"
+                   android:maxLength="5"
+                   android:gravity="center"
+                   android:inputType="number" >
+
+                   <requestFocus />
+               </EditText>
+
+               
+               
+               <EditText
+                   android:id="@+id/ie1" android:singleLine="true"
+                   android:layout_width="wrap_content"
+                   android:hint="+/-"
+                   android:text="4"
+                   android:maxLength="5"
+                   android:gravity="center"
+                   android:layout_height="wrap_content"
+                   android:inputType="number" >
+
+    
+               </EditText>
+               
+               
+           </TableRow>
+           
+           
+                      <TableRow
+               android:id="@+id/tableRow4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               
+               <TextView
+                   android:id="@+id/textView3"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="0" />
+                          
+               
+               
+               
+               <EditText
+                   android:id="@+id/v2" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1"
+                   android:maxLength="5"
+                   android:inputType="number" >
+
+               </EditText>
+               
+
+               
+                              
+               <EditText
+                   android:id="@+id/i2" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="2"
+                   android:maxLength="5"
+                   android:inputType="number" >
+
+               </EditText>
+               
+           </TableRow>
+           
+                      
+                      
+                                 <TableRow
+               android:id="@+id/tableRow5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               
+               <TextView
+                   android:id="@+id/textView3"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1" />
+               
+               
+               
+               <EditText
+                   android:id="@+id/v3" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:maxLength="5"
+                   android:text="2"
+                   android:layout_height="wrap_content"
+                   android:inputType="number" >
+
+    
+               </EditText>
+               
+               
+               
+               <EditText
+                   android:id="@+id/i3" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1"
+                   android:maxLength="5"
+                   android:inputType="number" >
+
+               </EditText>
+               
+               
+           </TableRow>
+           
+                                 
+                                            <TableRow
+               android:id="@+id/tableRow6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="2" />
+               
+               
+               
+               <EditText
+                   android:id="@+id/v4" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:maxLength="5"
+                   android:text="3"
+                   android:layout_height="wrap_content"
+                   android:inputType="number" >
+
+    
+               </EditText>
+               
+               
+               
+               <EditText
+                   android:id="@+id/i4" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="4"
+                   android:maxLength="5"
+                   android:inputType="number" >
+
+               </EditText>
+               
+               
+           </TableRow>
+           
+                                            
+                                                       <TableRow
+               android:id="@+id/tableRow7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="3" />
+               
+               
+               
+               <EditText
+                   android:id="@+id/v5" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:maxLength="5"
+                   android:text="4"
+                   android:layout_height="wrap_content"
+                   android:inputType="number" >
+
+    
+               </EditText>
+               
+               
+               
+               <EditText
+                   android:id="@+id/i5" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="6"
+                   android:maxLength="5"
+                   android:inputType="number" >
+
+               </EditText>
+               
+               
+           </TableRow>
+           
+                                                       
+                                                                  <TableRow
+               android:id="@+id/tableRow7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="4" />
+               
+               
+               
+               <EditText
+                   android:id="@+id/v6" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:maxLength="5"
+                   android:text="4"
+                   android:layout_height="wrap_content"
+                   android:inputType="number" >
+
+    
+               </EditText>
+               
+               
+               
+               <EditText
+                   android:id="@+id/i6" android:singleLine="true"
+                   android:gravity="center"
+                   android:text="4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   
+                   android:maxLength="5"
+                   android:inputType="number" >
+
+               </EditText>
+               
+               
+           </TableRow>
+           
+                                                                  
+                                                                             <TableRow
+               android:id="@+id/tableRow8"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="5" />
+               
+               
+               
+               <EditText
+                   android:id="@+id/v7" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:maxLength="5"
+                   android:text="4"
+                   android:layout_height="wrap_content"
+                   android:inputType="number" >
+
+    
+               </EditText>
+               
+               
+               
+               <EditText
+                   android:id="@+id/i7" android:singleLine="true"
+                   android:gravity="center"
+                   android:text="4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   
+                   android:maxLength="5"
+                   android:inputType="number" >
+
+               </EditText>
+               
+               
+           </TableRow>
+           
+                                                                             
+                                                                                        <TableRow
+               android:id="@+id/tableRow9"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="6" />
+               
+               
+               
+               <EditText
+                   android:id="@+id/v8" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:maxLength="5"
+                   android:text="4"
+                   android:layout_height="wrap_content"
+                   android:inputType="number" >
+
+    
+               </EditText>
+               
+               
+               
+               <EditText
+                   android:id="@+id/i8" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="4"
+                   android:maxLength="5"
+                   android:inputType="number" >
+
+               </EditText>
+               
+               
+           </TableRow>
+           
+                                                                                        
+                                                                                                   <TableRow
+               android:id="@+id/tableRow10"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="7" />
+               
+               
+               
+               <EditText
+                   android:id="@+id/v9" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:maxLength="5"
+                   android:text="4"
+                   android:layout_height="wrap_content"
+                   android:inputType="number" >
+
+    
+               </EditText>
+               
+               
+               
+               <EditText
+                   android:id="@+id/i9" android:singleLine="true"
+                   android:gravity="center"
+                   android:text="4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   
+                   android:maxLength="5"
+                   android:inputType="number" >
+
+               </EditText>
+               
+               
+           </TableRow>
+           
+                                                                                                   
+               <TableRow
+               android:id="@+id/tableRow11"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:layout_width="wrap_content"
+                   android:gravity="center"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+               
+               
+               
+               <EditText
+                   android:id="@+id/v10" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:maxLength="5"
+                   android:text="4"
+                   android:layout_height="wrap_content"
+                   android:inputType="number" >
+
+    
+               </EditText>
+               
+               
+               
+               <EditText
+                   android:id="@+id/i10" android:singleLine="true"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="4"
+                   android:maxLength="5"
+                   android:inputType="number" >
+
+               </EditText>
+               
+               
+           </TableRow>
+
+               
+               
+               
+               
+               
+               
+                <TableRow
+               android:id="@+id/tableRow12"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+                    
+
+                    <Button
+                        android:id="@+id/graph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Graph View" />
+
+                    <Button
+                        android:id="@+id/work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WorkSpace" />
+                  <Button
+                        android:id="@+id/conc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Conclusion" />
+
+                    <Button
+                        android:id="@+id/comm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comments" />
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submit" />
+           </TableRow>
+                
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </TableLayout>
+       
+ </ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/btn_black"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textVie1"
+        style="@style/BtnText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_orange"
+        android:gravity="center"
+        android:text="List of Experiments"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/BtnText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_orange"
+        android:gravity="center"
+        android:text="Set I Experiments"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/b1"
+        style="@style/ButtonTexttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30"
+        android:background="@drawable/white"
+        android:text="1.Optical Fiber." />
+
+    <Button
+        android:id="@+id/b2"
+        style="@style/ButtonTexttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:text="2.Diffraction Of A Laser Light Through Diffraction Grating." />
+
+    <Button
+        android:id="@+id/b3"
+        style="@style/ButtonTexttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:text="3.Four probe method." />
+
+    <Button
+        android:id="@+id/b4"
+        style="@style/ButtonTexttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:text="4.Fermi Energy Of A Given Metal." />
+
+    <Button
+        android:id="@+id/b5"
+        style="@style/ButtonTexttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:text="5.Diode Characteristics." />
+
+    <Button
+        android:id="@+id/e"
+        style="@style/ButtonTexttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:text="Exit" >
+    </Button>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="608dp"
+        android:layout_height="wrap_content"
+        android:text="Experiment 1 and 2 will be performed in one lab. " />
+
+</LinearLayout>
+
+</ScrollView>

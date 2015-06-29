@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.triggerinnovations.physics"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <application  android:debuggable="true" android:icon="@drawable/logo3"  android:label="Physics Lab BVBCET Hubli">
+        <activity android:name="com.triggerinnovations.physics.startup.flash1"
+                  android:label="Physics Lab BVBCET Hubli">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity  android:name="com.triggerinnovations.physics.passive.Passive"></activity>
+        <activity  android:name="com.triggerinnovations.physics.passive.Passive_work"></activity>
+        <activity  android:name="com.triggerinnovations.physics.passive.Graph_caller"></activity>
+        <activity  android:name="com.triggerinnovations.physics.passive.Graph"></activity>
+        <activity  android:name="com.triggerinnovations.physics.passive.Graph_settings"></activity>
+        
+        
+
+        
+        
+        <activity  android:name="com.triggerinnovations.physics.diodea.diodemain"></activity>
+        <activity  android:name="com.triggerinnovations.physics.diodea.Graph_diode_caller"></activity>
+        <activity  android:name="com.triggerinnovations.physics.diodea.Graph_diode"></activity>
+        <activity  android:name="com.triggerinnovations.physics.diodea.Graph_diode_settings"></activity>
+         
+        
+        <activity  android:name="com.triggerinnovations.physics.fermi.Fermi"></activity>
+        <activity  android:name="com.triggerinnovations.physics.fermi.Graph_fermi_caller"></activity>
+        <activity  android:name="com.triggerinnovations.physics.diodea.Graph_fermi_settings"></activity>
+        <activity  android:name="com.triggerinnovations.physics.diodea.Graph_fermi"></activity>
+         
+        
+        
+        
+        <activity  android:name="com.triggerinnovations.physics.pdfloader.explodr1"></activity>
+        <activity  android:name="com.triggerinnovations.physics.pdfloader.explodr2"></activity>
+        <activity  android:name="com.triggerinnovations.physics.pdfloader.instruction"></activity>
+        <activity  android:name="com.triggerinnovations.physics.pdfloader.pdfloader1"></activity>
+        <activity  android:name="com.triggerinnovations.physics.pdfloader.pdfloader2"></activity>
+        <activity  android:name="com.triggerinnovations.physics.startup.set1"></activity>
+        <activity  android:name="com.triggerinnovations.physics.startup.set2"></activity>
+        <activity  android:name="com.triggerinnovations.physics.startup.start"></activity>
+    
+        
+                
+        <activity android:name="com.triggerinnovations.physics.startup.flash2"></activity>
+        <activity android:name="com.triggerinnovations.physics.startup.Home"></activity>
+        <activity android:name="com.triggerinnovations.physics.startup.LoginActivity"></activity>
+        
+    
+           <activity android:name="com.triggerinnovations.physics.stefans.estimate_error" ></activity>
+        <activity android:name="com.triggerinnovations.physics.stefans.Graph_estimate_caller" ></activity>
+        <activity android:name="com.triggerinnovations.physics.stefans.Graph_estimate_settings" ></activity>
+        <activity android:name="com.triggerinnovations.physics.stefans.Graph_estimate"></activity>
+        <activity android:name="com.triggerinnovations.physics.stefans.Graph_stefan_caller"></activity>
+        <activity android:name="com.triggerinnovations.physics.stefans.Graph_stefan_settings"></activity>
+        <activity android:name="com.triggerinnovations.physics.stefans.Graph_stefans" ></activity>
+ <activity android:name="com.triggerinnovations.physics.stefans.StefansLaw" ></activity>
+ <activity android:name="com.triggerinnovations.physics.stefans.Stefans_work" ></activity>
+ <activity android:name="com.triggerinnovations.physics.stefans.tab_stefans" ></activity>
+        
+    <activity android:name="com.triggerinnovations.physics.opticalfiber.Optical"></activity>
+     <activity android:name="com.triggerinnovations.physics.opticalfiber.Optical_work"></activity>     
+        
+     <activity android:name="com.triggerinnovations.physics.diffraction.Diffraction"></activity>   
+     
+      <activity android:name="com.triggerinnovations.physics.diffraction.Diffraction_work"></activity>   
+        
+         
+            
+    </application>
+ <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" /><uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+</manifest>
